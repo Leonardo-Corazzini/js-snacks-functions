@@ -16,7 +16,7 @@ function vowelsCount(string) {
     return numberOfVowels
 };
 
-debugger;
+
 // Invoca la funzione qui e stampa il risultato in console
 const result = vowelsCount(word);
 console.log(result)

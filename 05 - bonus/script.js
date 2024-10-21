@@ -9,7 +9,7 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-function saluto (nome,ora){
+function saluto (nome){
     let tipoDiSaluto =''
     if (ora <= 13){
         tipoDiSaluto = 'Buongiorno'
