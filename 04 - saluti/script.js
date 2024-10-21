@@ -4,10 +4,13 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function saluto (nome){
+    console.log(`Ciao ${nome}`)
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
+saluto (name);
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
