@@ -9,9 +9,21 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function saluto (nome,ora){
+    let tipoDiSaluto =''
+    if (ora <= 13){
+        tipoDiSaluto = 'Buongiorno'
+    } else if (ora > 13 && ora <= 17){
+        tipoDiSaluto = 'Buon pomeriggio'
+    } else if (ora > 17){
+        tipoDiSaluto = 'Buonasera'
+    }
+    console.log(`${tipoDiSaluto} ${nome}`)
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+saluto(name,18)
 
 
 
