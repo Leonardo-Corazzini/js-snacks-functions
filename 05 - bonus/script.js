@@ -11,11 +11,14 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 function saluto (nome){
     let tipoDiSaluto =''
-    if (ora <= 13){
+    let date = new Date()
+    let hour = date.getHours()
+    console.log(hour)
+    if (hour <= 13){
         tipoDiSaluto = 'Buongiorno'
-    } else if (ora > 13 && ora <= 17){
+    } else if (hour > 13 && ora <= 17){
         tipoDiSaluto = 'Buon pomeriggio'
-    } else if (ora > 17){
+    } else if (hour > 17){
         tipoDiSaluto = 'Buonasera'
     }
     console.log(`${tipoDiSaluto} ${nome}`)
@@ -23,7 +26,7 @@ function saluto (nome){
 
 
 // Invoca la funzione qui e stampa il risultato in console
-saluto(name,18)
+saluto(name)
 
 
 
