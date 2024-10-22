@@ -16,9 +16,9 @@ function saluto (nome){
     console.log(hour)
     if (hour <= 13){
         tipoDiSaluto = 'Buongiorno'
-    } else if (hour > 13 && ora <= 17){
+    } else if (hour <= 17){
         tipoDiSaluto = 'Buon pomeriggio'
-    } else if (hour > 17){
+    } else {
         tipoDiSaluto = 'Buonasera'
     }
     console.log(`${tipoDiSaluto} ${nome}`)
